@@ -1,7 +1,7 @@
 {
-  "name": "webpack-test",
+  "name": "cps",
   "version": "1.0.0",
-  "description": "",
+  "description": "- Babel\r - SCSS\r - Font loading\r - Autoprefixer\r - Sourcemaps",
   "main": "index.js",
   "keywords": [],
   "author": "",
@@ -41,5 +41,14 @@
     "start": "webpack-dev-server --mode development --open",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DehoffE/webpack-static-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DehoffE/webpack-static-template/issues"
+  },
+  "homepage": "https://github.com/DehoffE/webpack-static-template#readme"
 }
