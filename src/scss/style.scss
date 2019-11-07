@@ -1,17 +1,21 @@
-$bgColor: #24292e;
-$text: #fff;
+@import 'variables';
 
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
+*, *::before, *::after {
+    box-sizing: inherit;
 }
 
+html {
+    box-sizing: border-box;
+}
+
+html,
 body {
-  padding: 1rem;
-  margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
+    margin: 0;
+    padding: 0;
+
+    font-family: "TT Lakes";
+}
+
+img {
+    max-width: 100%;
 }
