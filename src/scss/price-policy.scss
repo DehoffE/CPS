@@ -1,0 +1,36 @@
+@import 'variables';
+
+.price-policy {
+    padding-left: 16px;
+    padding-right: 16px;
+
+    &__text {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+    }
+
+    &__link {
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        text-decoration: none;
+        color: #000;
+
+        &::after {
+            content: '';
+
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            margin-left: 10px;
+
+            border: 2px solid $btnColor;
+            border-left: transparent;
+            border-bottom: transparent;
+            transform: rotate(45deg);
+        }
+    }
+}
