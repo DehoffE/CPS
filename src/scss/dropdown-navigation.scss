@@ -1,0 +1,32 @@
+@import 'variables';
+
+.dropdown-navigation {
+    padding: 0;
+
+    list-style: none;
+
+    &__item {
+        margin-bottom: 24px;
+    }
+
+    &__link {
+        display: block;
+        padding-left: 10px;
+
+        font-family: "TT Lakes";
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        text-decoration: none;
+        color: #000;
+
+        border: 4px solid transparent;
+        
+        &--active {
+            color: #7E7E82;
+
+            border-left-color: $highlightColor;
+        }
+    }
+}

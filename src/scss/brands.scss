@@ -1,0 +1,48 @@
+@import 'variables';
+
+.brands {
+    border-top: 1px solid $shadowColor;
+
+    &__title {
+        padding: 16px;
+        margin-top: 0;
+
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: uppercase;
+        letter-spacing: -0.2px;
+        color: #7E7E82;
+
+        background-image: linear-gradient(to right, #f8f8f8, #ffffff);
+    }
+
+    &__list {
+        display: flex;
+        padding-left: 16px;
+
+        list-style: none;
+
+        overflow: scroll;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 224px;
+        height: 72px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-right: 16px;
+        flex-shrink: 0;
+
+        background-color: #fff;
+        border: 1px solid #EAEAEA;
+        border-radius: 6px;
+    }
+
+    &__image {
+        flex-shrink: 0;
+    }
+}
