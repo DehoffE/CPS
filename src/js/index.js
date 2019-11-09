@@ -15,5 +15,6 @@ import '../scss/privacy-policy.scss';
 import '../scss/dropdown-menu.scss';
 import '../scss/dropdown-navigation.scss';
 import '../scss/dropdown-contacts.scss';
+import '../scss/languages-list.scss';
 
 import '../js/dropdown.js';

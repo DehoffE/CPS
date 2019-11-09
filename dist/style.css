@@ -487,9 +487,17 @@ img {
   top: 0;
   left: 0;
   z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 100vw;
   height: 100vh;
   margin-left: -100vw;
+  padding-bottom: 32px;
   background-color: #fff;
   -webkit-transition: margin-left 300ms;
   -o-transition: margin-left 300ms;
@@ -553,12 +561,14 @@ img {
     border-radius: 50%; }
   .dropdown-menu__navigation {
     margin-bottom: 32px; }
+  .dropdown-menu__contacts {
+    margin-top: auto; }
 
 .dropdown-navigation {
   padding: 0;
   list-style: none; }
   .dropdown-navigation__item {
-    margin-bottom: 24px; }
+    margin-bottom: 16px; }
   .dropdown-navigation__link {
     display: block;
     padding-left: 10px;
@@ -580,8 +590,14 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
     list-style: none; }
+  .dropdown-contacts__item {
+    margin-bottom: 16px; }
   .dropdown-contacts__button {
     display: block;
     width: 40px;
@@ -598,6 +614,39 @@ img {
       background-image: url(./static/mail.svg);
       background-repeat: no-repeat;
       background-position: center center; }
+  .dropdown-contacts__email {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px; }
+  .dropdown-contacts__t-number {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px; }
+
+.languages-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 16px;
+  margin: 0;
+  list-style: none; }
+  .languages-list__item {
+    margin-right: 7px; }
+  .languages-list__link {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-decoration: none;
+    color: #000; }
+    .languages-list__link--current {
+      color: #7E7E82; }
 
 
 /*# sourceMappingURL=style.css.map*/
