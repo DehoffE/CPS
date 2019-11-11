@@ -2,10 +2,16 @@
 
 .brands {
     border-top: 1px solid $shadowColor;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 321px) {
+        margin-bottom: 32px;
+    }
 
     &__title {
         padding: 16px;
         margin-top: 0;
+        margin-bottom: 16px;
 
         font-weight: normal;
         font-size: 16px;
@@ -15,6 +21,12 @@
         color: #7E7E82;
 
         background-image: linear-gradient(to right, #f8f8f8, #ffffff);
+
+        @media screen and (min-width: 321px) {
+            padding-left: 24px;
+            padding-right: 24px;
+            margin-bottom: 24px;
+        }
     }
 
     &__list {
@@ -24,6 +36,12 @@
         list-style: none;
 
         overflow: scroll;
+
+        @media screen and (min-width: 321px) {
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 8px;
+        }
     }
 
     &__item {
@@ -40,6 +58,41 @@
         background-color: #fff;
         border: 1px solid #EAEAEA;
         border-radius: 6px;
+
+        @media screen and (min-width: 321px) {
+            margin-bottom: 16px;
+            margin-right: 24px;
+
+            &:not(:nth-child(-n + 6)) {
+                display: none;
+            }
+        }
+    }
+
+    &__link {
+        display: none;
+        align-items: center;
+        margin-bottom: 16px;
+        margin-left: 24px;
+
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: -0.2px;
+        text-decoration: none;
+        color: #000;
+
+        @media screen and (min-width: 321px) {
+            display: inline-flex;
+        }
+
+        &::before {
+            content: '';
+
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background-image: url("../img/arrow.png");
+        }
     }
 
     &__image {

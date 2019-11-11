@@ -3,10 +3,18 @@
 .tech-list {
     display: flex;
     padding-left: 16px;
+    padding-right: 16px;
 
     list-style: none;
 
     overflow: scroll;
+
+    @media screen and (min-width: 321px) {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
 
     &__item {
         display: flex;
@@ -21,6 +29,20 @@
         background-color: #fff;
         border: 1px solid #eaeaea;
         border-radius: 6px;
+
+        @media screen and (min-width: 321px) {
+            width: 224px;
+            margin-right: 24px;
+            margin-bottom: 24px;
+
+            &:nth-child(3) {
+                margin-right: 0;
+            }
+
+            &:not(:nth-child(-n + 3)) {
+                display: none;
+            }
+        }
     }
 
     &__title {
@@ -48,9 +70,45 @@
         color: #7E7E82;
 
         background-image: linear-gradient(to right, #f8f8f8, #ffffff);
+
+        @media screen and (min-width: 321px) {
+            padding-left: 24px;
+            padding-right: 24px;
+            margin-bottom: 24px;
+        }
+    }
+
+    &__list {
+        margin-bottom: 0;
     }
 
     &__link {
         align-self: flex-end;
+    }
+    
+    &__button {
+        display: none;
+        align-items: center;
+        margin-bottom: 16px;
+        margin-left: 24px;
+
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: -0.2px;
+        text-decoration: none;
+        color: #000;
+
+        @media screen and (min-width: 321px) {
+            display: inline-flex;
+        }
+
+        &::before {
+            content: '';
+
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background-image: url("../img/arrow.png");
+        }
     }
 }

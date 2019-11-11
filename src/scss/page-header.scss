@@ -8,16 +8,55 @@
 
     box-shadow: inset 0 -1px 0 $shadowColor;
 
+    @media screen and (min-width: 321px) {
+        padding: 8px 24px;
+    }
+
     &__burger {
         margin-right: 16px;
+
+        @media screen and (min-width: 321px) {
+            margin-right: 20px;
+        }
     }
 
     &__logo {
+        display: flex;
+        align-items: center;
         margin-right: auto;
+
+        @media screen and (min-width: 321px) {
+            &::before {
+                content: '';
+
+                display: block;
+                width: 2px;
+                height: 32px;
+                margin-right: 20px;
+
+                background-color: $separatorColor;
+            }
+        }
+    }
+
+    &__socials {
+        display: none;
+        margin-left: 20px;
+
+        @media screen and (min-width: 321px) {
+            display: flex;
+            justify-content: flex-end;
+        }
     }
 
     &__user-menu {
         margin: 0;
         margin-left: 16px;
+
+        @media screen and (min-width: 321px) {
+            margin-left: 4px;
+        }
     }
+
+    
 }

@@ -3,6 +3,134 @@
 .prices {
     border-top: 1px solid $shadowColor;
 
+    @media screen and (min-width: 321px) {
+        &__table {
+            width: calc(100% - 60px);
+            margin-left: auto;
+            margin-right: auto;
+
+            font-size: 14px;
+    
+            border-collapse: collapse;
+    
+            thead {
+                font-weight: 700;
+                color: #7E7E82;
+                text-align: left;
+            }
+    
+            tbody {
+                background-color: #fff;
+                border-left: 16px solid #fff;
+                border-right: 16px solid #fff;
+                border-radius: 6px;
+    
+                .prices__t-row {
+                    border-bottom: 1px solid #eaeaea;
+    
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    
+        &__t-cell {
+            padding-top: 23px;
+            padding-left: 1px;
+            padding-bottom: 23px;  
+            
+            &:nth-child(4) {
+                text-align: right;
+            }
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        &__table {
+            display: block;
+            padding-left: 8px;
+            padding-right: 8px;
+
+            background-color: transparent;
+    
+            overflow: scroll;
+    
+            tbody {
+                display: flex;
+            }
+
+            thead {
+                display: none;
+            }
+        }
+    
+        &__t-row {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-shrink: 0;
+            width: 260px;
+            min-height: 200px;
+            padding: 16px;
+            margin-right: 16px;
+    
+            background-color: #fff;
+            border-radius: 6px;
+        }
+    
+        &__t-cell {
+            position: relative;
+            display: block;
+    
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0.2px;
+    
+            &:nth-child(1)::before {
+                content: 'Ремонтные услуги';
+    
+                display: block;
+                margin-bottom: 4px;
+    
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 16px;
+                color: #7E7E82;
+            }
+    
+            &:nth-child(2)::before {
+                content: 'Цена';
+    
+                display: block;
+                margin-bottom: 4px;
+    
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 16px;
+                color: #7E7E82;
+            }
+    
+            &:nth-child(3)::before {
+                content: 'Срок';
+    
+                display: block;
+                margin-bottom: 4px;
+    
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 16px;
+                color: #7E7E82;
+            }
+        }
+
+        &__btn {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+
     &__title {
         padding: 16px;
         margin-top: 0;
@@ -15,85 +143,12 @@
         color: #7E7E82;
 
         background-image: linear-gradient(to right, #f8f8f8, #ffffff);
-    }
 
-    &__table {
-        display: block;
-        padding-left: 16px;
-
-        overflow: scroll;
-
-        tbody {
-            display: flex;
+        @media screen and (min-width: 321px) {
+            padding: 16px 24px;
+            margin-bottom: 8px;
         }
     }
 
-    &__t-row {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        flex-shrink: 0;
-        width: 260px;
-        min-height: 200px;
-        padding: 16px;
-        margin-right: 16px;
-
-        background-color: #fff;
-        border-radius: 6px;
-
-        &:first-child {
-            display: none;
-        }
-    }
-
-    &__t-cell {
-        position: relative;
-        display: block;
-
-        font-size: 14px;
-        line-height: 18px;
-        letter-spacing: 0.2px;
-
-        &:nth-child(1)::before {
-            content: 'Ремонтные услуги';
-
-            display: block;
-            margin-bottom: 4px;
-
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 16px;
-            color: #7E7E82;
-        }
-
-        &:nth-child(2)::before {
-            content: 'Цена';
-
-            display: block;
-            margin-bottom: 4px;
-
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 16px;
-            color: #7E7E82;
-        }
-
-        &:nth-child(3)::before {
-            content: 'Срок';
-
-            display: block;
-            margin-bottom: 4px;
-
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 16px;
-            color: #7E7E82;
-        }
-    }
-
-    &__btn {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-    }
+    
 }
