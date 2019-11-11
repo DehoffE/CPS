@@ -1,19 +1,36 @@
 .about-us {
-    &__text {
+    @media screen and (min-width: 530px) {
+        display: flex;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    &__text-content {
         margin-left: 16px;
         margin-right: 16px;
+
+        @media screen and (min-width: 530px) {
+            margin-left: 0;
+        }
+    }
+
+    &__text {
+        margin-top: 0;
         margin-bottom: 16px;
 
         font-weight: 500;
         font-size: 14px;
-        line-height: 18px;
+        line-height: 20px;
         letter-spacing: 0.2px;
+
+        &:last-child {
+            margin-bottom: 10px;
+        }
     }
 
     &__link {
         display: inline-flex;
         align-items: center;
-        margin-left: 16px;
         margin-bottom: 16px;
 
         font-weight: 700;
@@ -29,6 +46,13 @@
             width: 24px;
             height: 24px;
             background-image: url("../img/arrow.png");
+        }
+    }
+
+    img {
+        @media screen and (min-width: 530px) {
+            align-self: flex-start;
+            width: 50%;
         }
     }
 }

@@ -1,4 +1,8 @@
 .privacy-policy {
+    @media screen and (min-width: 321px) {
+        width: 215px;
+    }
+
     &__link {
         font-weight: 700;
         font-size: 14px;

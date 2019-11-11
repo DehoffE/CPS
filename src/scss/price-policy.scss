@@ -4,6 +4,12 @@
     padding-left: 16px;
     padding-right: 16px;
 
+    @media screen and (min-width: 321px) {
+        width: 469px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
     &__text {
         font-size: 14px;
         line-height: 20px;

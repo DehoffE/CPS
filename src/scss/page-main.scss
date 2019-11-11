@@ -80,10 +80,21 @@
 
         border: 4px solid transparent;
         border-left: 4px solid $highlightColor;
+
+        @media screen and (min-width: 321px) {
+            margin-bottom: 32px;
+            padding-left: 20px;
+        }
     }
 
     &__navigation {
         margin-left: 16px;
+        margin-bottom: 24px;
+
+        @media screen and (min-width: 321px) {
+            margin-left: 24px;
+            margin-bottom: 32px;
+        }
     }
 
     &__about-us {

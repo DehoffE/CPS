@@ -2,44 +2,6 @@
 
 .dropdown-contacts {
     padding-left: 16px;
-    
-    &__list {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0;
-        margin-top: 0;
-        margin-bottom: 0;
-
-        list-style: none;
-    }
-
-    &__item {
-        margin-bottom: 16px;
-    }
-
-    &__button {
-        display: block;
-        width: 40px;
-        height: 40px;
-        margin-right: 16px;
-
-        font-size: 0;
-
-        background-color: $btnColor;
-        border-radius: 50%;
-
-        &--type_call {
-            background-image: url("../img/call.svg");
-            background-repeat: no-repeat;
-            background-position: center center;
-        }
-
-        &--type_mail {
-            background-image: url("../img/mail.svg");
-            background-repeat: no-repeat;
-            background-position: center center;
-        }
-    }
 
     &__email {
         margin-top: 0;
