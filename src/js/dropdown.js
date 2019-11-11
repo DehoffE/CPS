@@ -19,3 +19,23 @@ close.addEventListener('click', function() {
     }, 50);
 });
 
+document.addEventListener('keydown', function(e) {
+    if (e.keyCode === 27) {
+        dropdown.classList.remove('dropdown-menu--open');
+
+        setTimeout(function(){
+            dropdownWrap.classList.remove('dropdown-menu-wrap--open');
+        }, 50);
+    }
+});
+
+dropdownWrap.addEventListener('click', function(e) {
+    if (e.path[0] === dropdownWrap) {
+        dropdown.classList.remove('dropdown-menu--open');
+
+        setTimeout(function(){
+            dropdownWrap.classList.remove('dropdown-menu-wrap--open');
+        }, 50);
+    }
+})
+

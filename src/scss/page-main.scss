@@ -68,6 +68,19 @@
 
     background-color: $mainBg;
 
+    @media screen and (min-width: 769px) {
+        margin-left: 320px;
+    }
+
+    &__header {
+        @media screen and (min-width: 769px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 32px;
+        }
+    }
+
     &__main-title {
         padding-left: 12px;
         margin-top: 24px;
@@ -99,5 +112,21 @@
 
     &__about-us {
         margin-bottom: 24px;
+    }
+
+    &__user-menu {
+        display: none;
+
+        @media screen and (min-width: 769px) {
+            display: flex;
+
+            .user-menu__link {
+                font-size: 16px;
+
+                &::after {
+                    margin-left: 8px;
+                }
+            }
+        }
     }
 }

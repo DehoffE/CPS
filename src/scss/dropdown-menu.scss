@@ -23,6 +23,11 @@
         width: 320px;
     }
 
+    @media screen and (min-width: 769px) {
+        left: 0;
+        box-shadow: none;
+    }
+
     &--open {
         left: 0;
     }
@@ -47,6 +52,10 @@
         border-radius: 50%;
 
         transform: rotate(45deg);
+
+        @media screen and (min-width: 769px) {
+            display: none;
+        }
 
         &::before {
             content: '';
