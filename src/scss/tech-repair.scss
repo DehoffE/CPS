@@ -43,6 +43,20 @@
                 display: none;
             }
         }
+
+        @media screen and (min-width: 769px) {
+            &:nth-child(3) {
+                margin-right: 24px;
+            }
+
+            &:nth-child(4) {
+                margin-right: 0;
+            }
+
+            &:nth-child(n + 3) {
+                display: flex;
+            }
+        }
     }
 
     &__title {

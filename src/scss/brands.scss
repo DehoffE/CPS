@@ -67,6 +67,12 @@
                 display: none;
             }
         }
+
+        @media screen and (min-width: 769px) {
+            &:nth-child(n + 6) {
+                display: flex;
+            }
+        }
     }
 
     &__link {

@@ -8,39 +8,43 @@
     list-style: none;
     padding: 0;
 
-    &::before {
-        content: '';
-
-        display: block;
-        width: 2px;
-        height: 32px;
-
-        background-color: $separatorColor;
-    }
-
-    &__item {
+    &__item {        
         margin-left: 16px;
     }
 
     &__link {
-        display: block;
-        width: 40px;
-        height: 40px;
+        display: flex;
+        align-items: center;
 
         font-size: 0;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: -0.2px;
         text-decoration: none;
 
-        background-color: $btnColor;
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-        border-radius: 50%;
+        &::after {
+            content: "";
+
+            display: block;
+            width: 40px;
+            height: 40px;
+
+            background-color: $btnColor;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            border-radius: 50%;
+        }
 
         &--order {
-            background-image: url(../img/order.png);
+            &::after {
+                background-image: url(../img/order.png);
+            }
         }
 
         &--status {
-            background-image: url(../img/status.png);
+            &::after {
+                background-image: url(../img/status.png);
+            }
         }
     }
 }
