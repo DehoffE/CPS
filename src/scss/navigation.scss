@@ -8,6 +8,10 @@
 
     list-style: none;
 
+    @media screen and (min-width: 769px) {
+        flex-wrap: wrap;
+    }
+
     &__link {
         display: inline-block;
         padding-top: 6px;

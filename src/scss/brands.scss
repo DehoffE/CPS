@@ -27,6 +27,11 @@
             padding-right: 24px;
             margin-bottom: 24px;
         }
+
+        @media screen and (min-width: 769px) {
+            padding-left: 32px;
+            padding-right: 32px;
+        }
     }
 
     &__list {
@@ -67,6 +72,9 @@
         }
 
         @media screen and (min-width: 769px) {
+            width: 240px;
+            margin-right: 32px;
+
             &:nth-child(n + 6) {
                 display: flex;
             }

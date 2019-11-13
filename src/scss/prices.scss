@@ -49,6 +49,10 @@
                 text-align: right;
             }
         }
+
+        &__btn {
+            margin-left: auto;
+        }
     }
 
     @media screen and (max-width: 320px) {
@@ -71,6 +75,8 @@
         }
     
         &__t-row {
+            position: relative;
+
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -85,7 +91,6 @@
         }
     
         &__t-cell {
-            position: relative;
             display: block;
     
             font-size: 14px;
@@ -127,6 +132,12 @@
                 line-height: 16px;
                 color: #7E7E82;
             }
+
+            &:last-child {
+                position: absolute;
+                right: 16px;
+                bottom: 16px;
+            }
         }
 
         &__btn {
@@ -139,6 +150,7 @@
     &__title {
         padding: 16px;
         margin-top: 0;
+        margin-bottom: 16px;
 
         font-weight: normal;
         font-size: 16px;
