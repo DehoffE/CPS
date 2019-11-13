@@ -1,5 +1,6 @@
 import '../scss/fonts.scss';
 import '../scss/style.scss';
+import '../scss/slider.scss';
 import '../scss/social-btns.scss';
 import '../scss/page-header.scss';
 import '../scss/dropdown-menu-wrap.scss';
@@ -21,4 +22,7 @@ import '../scss/languages-list.scss';
 import '../scss/public-rules.scss';
 import '../scss/copyright.scss';
 
+
 import '../js/dropdown.js';
+import '../js/slider.js';
+

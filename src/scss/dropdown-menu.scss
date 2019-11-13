@@ -17,15 +17,19 @@
 
     transition: left 300ms;
 
-    overflow: scroll;
-
     @media screen and (min-width: 321px) {
         width: 320px;
     }
 
     @media screen and (min-width: 769px) {
         left: 0;
+
+        width: 306px;
         box-shadow: none;
+    }
+
+    @media screen and (max-height: 720px) {
+        overflow: scroll;
     }
 
     &--open {

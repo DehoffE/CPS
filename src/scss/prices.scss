@@ -5,6 +5,7 @@
 
     @media screen and (min-width: 321px) {
         &__table {
+            display: table;
             width: calc(100% - 60px);
             margin-left: auto;
             margin-right: auto;
@@ -32,6 +33,10 @@
                         border-bottom: none;
                     }
                 }
+
+                @media screen and (min-width: 321px) {
+                    display: table-row-group;
+                }
             }
         }
     
@@ -53,8 +58,8 @@
             padding-right: 8px;
 
             background-color: transparent;
-    
-            overflow: scroll;
+
+            overflow: hidden;
     
             tbody {
                 display: flex;

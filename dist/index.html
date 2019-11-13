@@ -58,14 +58,14 @@
                 </li>
             </ul>
         </header>
-        <nav>
-            <ul class="navigation page-main__navigation">
-                <li class="navigation__item"><a href="" class="navigation__link navigation__link--active">Ремонтируемые бренды</a></li>
-                <li class="navigation__item"><a href="" class="navigation__link">Ремонтируемые устройства</a></li>
-                <li class="navigation__item"><a href="" class="navigation__link">Цены на услуги</a></li>
-                <li class="navigation__item"><a href="" class="navigation__link">Адреса сервисных центров</a></li>
-                <li class="navigation__item"><a href="" class="navigation__link">Специальные цены</a></li>
-                <li class="navigation__item"><a href="" class="navigation__link">Отзывы</a></li>
+        <nav class="nav-slider">
+            <ul class="navigation page-main__navigation slider__list">
+                <li class="navigation__item slider__item"><a class="navigation__link navigation__link--active">Ремонтируемые бренды</a></li>
+                <li class="navigation__item slider__item"><a class="navigation__link">Ремонтируемые устройства</a></li>
+                <li class="navigation__item slider__item"><a class="navigation__link">Цены на услуги</a></li>
+                <li class="navigation__item slider__item"><a class="navigation__link">Адреса сервисных центров</a></li>
+                <li class="navigation__item slider__item"><a class="navigation__link">Специальные цены</a></li>
+                <li class="navigation__item slider__item"><a class="navigation__link">Отзывы</a></li>
             </ul>
         </nav>
         <section class="about-us page-main__about-us">
@@ -83,67 +83,103 @@
         </section>
         <section class="brands">
             <h2 class="brands__title">Ремонт техники различных брендов</h2>
-            <ul class="brands__list">
-                <li class="brands__item">
-                    <img class="brands__image" src="img/lenovo.png" alt="Lenovo" width="108">
-                    <a class="arrow-btn" href="">Подробнее</a>
-                </li>
-                <li class="brands__item">
-                    <img class="brands__image" src="img/samsung.png" alt="Samsung" width="116">
-                    <a class="arrow-btn" href="">Подробнее</a>
-                </li>
-                <li class="brands__item">
-                    <img class="brands__image" src="img/apple.png" alt="Apple" width="44">
-                    <a class="arrow-btn" href="">Подробнее</a>
-                </li>
-                <li class="brands__item">
-                    <img class="brands__image" src="img/view-sonic.png" alt="ViewSonic" width="128">
-                    <a class="arrow-btn" href="">Подробнее</a>
-                </li>
-                <li class="brands__item">
-                    <img class="brands__image" src="img/bosch.png" alt="Bosch" width="128">
-                    <a class="arrow-btn" href="">Подробнее</a>
-                </li>
-                <li class="brands__item">
-                    <img class="brands__image" src="img/hp.png" alt="HP" width="52">
-                    <a class="arrow-btn" href="">Подробнее</a>
-                </li>
-                <li class="brands__item">
-                    <img class="brands__image" src="img/acer.png" alt="Acer" width="94">
-                    <a class="arrow-btn" href="">Подробнее</a>
-                </li>
-                <li class="brands__item">
-                    <img class="brands__image" src="img/sony.png" alt="Sony" width="128">
-                    <a class="arrow-btn" href="">Подробнее</a>
-                </li>
-            </ul>
+            <div class="slider">
+                <ul class="brands__list slider__list">
+                    <li class="brands__item slider__item">
+                        <img class="brands__image" src="img/lenovo.png" alt="Lenovo" width="108">
+                        <a class="arrow-btn" href="">Подробнее</a>
+                    </li>
+                    <li class="brands__item slider__item">
+                        <img class="brands__image" src="img/samsung.png" alt="Samsung" width="116">
+                        <a class="arrow-btn" href="">Подробнее</a>
+                    </li>
+                    <li class="brands__item slider__item">
+                        <img class="brands__image" src="img/apple.png" alt="Apple" width="44">
+                        <a class="arrow-btn" href="">Подробнее</a>
+                    </li>
+                    <li class="brands__item slider__item">
+                        <img class="brands__image" src="img/view-sonic.png" alt="ViewSonic" width="128">
+                        <a class="arrow-btn" href="">Подробнее</a>
+                    </li>
+                    <li class="brands__item slider__item">
+                        <img class="brands__image" src="img/bosch.png" alt="Bosch" width="128">
+                        <a class="arrow-btn" href="">Подробнее</a>
+                    </li>
+                    <li class="brands__item slider__item">
+                        <img class="brands__image" src="img/hp.png" alt="HP" width="52">
+                        <a class="arrow-btn" href="">Подробнее</a>
+                    </li>
+                    <li class="brands__item slider__item">
+                        <img class="brands__image" src="img/acer.png" alt="Acer" width="94">
+                        <a class="arrow-btn" href="">Подробнее</a>
+                    </li>
+                    <li class="brands__item slider__item">
+                        <img class="brands__image" src="img/sony.png" alt="Sony" width="128">
+                        <a class="arrow-btn" href="">Подробнее</a>
+                    </li>
+                </ul>
+            </div>
             <a class="brands__link" href="">Показать все (9)</a>
         </section>
         <section class="tech-repair">
             <h2 class="tech-repair__title">Ремонт различных видов техники</h2>
-            <ul class="tech-list tech-repair__list">
-                <li class="tech-list__item">
-                    <h3 class="tech-list__title">Ремонт ноутбуков</h3>
-                    <a class="arrow-btn tech-repair__link" href="">Подробнее</a>
-                </li>
-                <li class="tech-list__item">
-                    <h3 class="tech-list__title">Ремонт планшетов</h3>
-                    <a class="arrow-btn tech-repair__link" href="">Подробнее</a>
-                </li>
-                <li class="tech-list__item">
-                    <h3 class="tech-list__title">Ремонт ПК</h3>
-                    <a class="arrow-btn tech-repair__link" href="">Подробнее</a>
-                </li>
-                <li class="tech-list__item">
-                    <h3 class="tech-list__title">Ремонт мониторов</h3>
-                    <a class="arrow-btn tech-repair__link" href="">Подробнее</a>
-                </li>
-            </ul>
+            <div class="tech-slider slider">
+                <ul class="tech-list tech-repair__list slider__list">
+                    <li class="tech-list__item slider__item">
+                        <h3 class="tech-list__title">Ремонт ноутбуков</h3>
+                        <a class="arrow-btn tech-repair__link" href="">Подробнее</a>
+                    </li>
+                    <li class="tech-list__item slider__item">
+                        <h3 class="tech-list__title">Ремонт планшетов</h3>
+                        <a class="arrow-btn tech-repair__link" href="">Подробнее</a>
+                    </li>
+                    <li class="tech-list__item slider__item">
+                        <h3 class="tech-list__title">Ремонт ПК</h3>
+                        <a class="arrow-btn tech-repair__link" href="">Подробнее</a>
+                    </li>
+                    <li class="tech-list__item slider__item">
+                        <h3 class="tech-list__title">Ремонт мониторов</h3>
+                        <a class="arrow-btn tech-repair__link" href="">Подробнее</a>
+                    </li>
+                </ul>
+            </div>
             <a class="tech-repair__button" href="">Показать все (9)</a>
         </section>
         <section class="prices">
             <h2 class="prices__title">Цены на услуги</h2>
-            <table class="prices__table">
+            <table class="prices__table price-slider">
+                <tbody class="slider__list">
+                    <tr class="prices__t-row slider__item">
+                        <td class="prices__t-cell">Диагностика</td>
+                        <td class="prices__t-cell">Бесплатно</td>
+                        <td class="prices__t-cell">30 мин</td>
+                        <td class="prices__t-cell"><a class="order-btn prices__btn" href="">Заказть</a></td>
+                    </tr>
+                    <tr class="prices__t-row slider__item">
+                        <td class="prices__t-cell">Замена дисплея</td>
+                        <td class="prices__t-cell">1 000 ₽</td>
+                        <td class="prices__t-cell">30-120 мин</td>
+                        <td class="prices__t-cell"><a class="order-btn prices__btn" href="">Заказть</a></td>
+                    </tr>
+                    <tr class="prices__t-row slider__item">
+                        <td class="prices__t-cell">Замена полифонического динамика</td>
+                        <td class="prices__t-cell">1 000 ₽</td>
+                        <td class="prices__t-cell">30-120 мин</td>
+                        <td class="prices__t-cell"><a class="order-btn prices__btn" href="">Заказть</a></td>
+                    </tr>
+                    <tr class="prices__t-row slider__item">
+                        <td class="prices__t-cell">Тестирование с выдачей технического заключения</td>
+                        <td class="prices__t-cell">1 000 ₽</td>
+                        <td class="prices__t-cell">30-120 мин</td>
+                        <td class="prices__t-cell"><a class="order-btn prices__btn" href="">Заказть</a></td>
+                    </tr>
+                    <tr class="prices__t-row slider__item">
+                        <td class="prices__t-cell">Замена программного обеспечения</td>
+                        <td class="prices__t-cell">1 000 ₽</td>
+                        <td class="prices__t-cell">30-120 мин</td>
+                        <td class="prices__t-cell"><a class="order-btn prices__btn" href="">Заказть</a></td>
+                    </tr>
+                </tbody>
                 <thead>
                     <tr class="prices__t-row">
                         <th class="prices__t-cell">Ремонтные услуги</th>
@@ -151,38 +187,6 @@
                         <th class="prices__t-cell">Срок</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr class="prices__t-row">
-                        <td class="prices__t-cell">Диагностика</td>
-                        <td class="prices__t-cell">Бесплатно</td>
-                        <td class="prices__t-cell">30 мин</td>
-                        <td class="prices__t-cell"><a class="order-btn prices__btn" href="">Заказть</a></td>
-                    </tr>
-                    <tr class="prices__t-row">
-                        <td class="prices__t-cell">Замена дисплея</td>
-                        <td class="prices__t-cell">1 000 ₽</td>
-                        <td class="prices__t-cell">30-120 мин</td>
-                        <td class="prices__t-cell"><a class="order-btn prices__btn" href="">Заказть</a></td>
-                    </tr>
-                    <tr class="prices__t-row">
-                        <td class="prices__t-cell">Замена полифонического динамика</td>
-                        <td class="prices__t-cell">1 000 ₽</td>
-                        <td class="prices__t-cell">30-120 мин</td>
-                        <td class="prices__t-cell"><a class="order-btn prices__btn" href="">Заказть</a></td>
-                    </tr>
-                    <tr class="prices__t-row">
-                        <td class="prices__t-cell">Тестирование с выдачей технического заключения</td>
-                        <td class="prices__t-cell">1 000 ₽</td>
-                        <td class="prices__t-cell">30-120 мин</td>
-                        <td class="prices__t-cell"><a class="order-btn prices__btn" href="">Заказть</a></td>
-                    </tr>
-                    <tr class="prices__t-row">
-                        <td class="prices__t-cell">Замена программного обеспечения</td>
-                        <td class="prices__t-cell">1 000 ₽</td>
-                        <td class="prices__t-cell">30-120 мин</td>
-                        <td class="prices__t-cell"><a class="order-btn prices__btn" href="">Заказть</a></td>
-                    </tr>
-                </tbody>
             </table>
         </section>
         <section class="price-policy">

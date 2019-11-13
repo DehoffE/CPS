@@ -35,8 +35,6 @@
 
         list-style: none;
 
-        overflow: scroll;
-
         @media screen and (min-width: 321px) {
             flex-wrap: wrap;
             justify-content: center;
@@ -103,5 +101,7 @@
 
     &__image {
         flex-shrink: 0;
+
+        user-select: none;
     }
 }
