@@ -10,6 +10,7 @@ for (let i = 0; i < buttonShowCallbackModal.length; i++) {
         setTimeout(function() {
             callbackModal.classList.add('callback-modal--open');
         }, 10);
+        callbackModal.querySelector('.callback-form__phone-number').focus();
     })
 }
 

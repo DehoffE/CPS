@@ -10,6 +10,7 @@ for (let i = 0; i < buttonShowfeedbackModal.length; i++) {
         setTimeout(function() {
             feedbackModal.classList.add('feedback-modal--open');
         }, 10);
+        feedbackModal.querySelector('.feedback-form__name').focus();
     })
 }
 

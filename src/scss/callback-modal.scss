@@ -127,6 +127,16 @@
         margin-right: 32px;
     }
 
+    textarea::placeholder,
+    input::placeholder {
+        font-family: "TT Lakes";
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: #B5B6BC;
+    }
+
     &__button {
         margin-left: auto;
     }
@@ -135,13 +145,14 @@
         width: 100%;
         padding: 12px 16px;
 
-        font-weight: 500;
+        font-family: "TT Lakes";
+        font-weight: 700;
         font-size: 16px;
         line-height: 24px;
         letter-spacing: -0.2px;
         color: #B5B6BC;
 
-        border: 1px solid #EAEAEA;
+        border: 2px solid #EAEAEA;
         border-radius: 8px;
     }
 
