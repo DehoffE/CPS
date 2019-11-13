@@ -28,11 +28,12 @@
 }
 
 .order-btn {
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 120px;
-    height: 32px;
+    max-width: 136px;
+    padding-top: 4px;
+    padding-bottom: 4px;
     padding-left: 20px;
     padding-right: 20px;
 
@@ -45,6 +46,7 @@
     color: #fff;
 
     background-color: $btnColor;
+    border: none;
     border-radius: 16px;
 
     &::after {
@@ -73,18 +75,22 @@
     }
 
     &__header {
+        padding-top: 20px;
+
         @media screen and (min-width: 769px) {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding-right: 32px;
+            padding-top: 38px;
+            margin-bottom: 8px;
         }
     }
 
     &__main-title {
         padding-left: 12px;
-        margin-top: 24px;
-        margin-bottom: 24px;
+        margin: 0;
+        margin-bottom: 20px;
 
         font-size: 28px;
         line-height: 40px;
@@ -95,8 +101,15 @@
         border-left: 4px solid $highlightColor;
 
         @media screen and (min-width: 321px) {
-            margin-bottom: 32px;
             padding-left: 20px;
+            margin-bottom: 28px;
+        }
+
+        @media screen and (min-width: 769px) {
+            padding-left: 30px;
+            margin-bottom: 0;
+            border-width: 0;
+            border-left-width: 4px;
         }
     }
 
@@ -108,6 +121,10 @@
             margin-left: 24px;
             margin-bottom: 32px;
         }
+
+        @media screen and (min-width: 769px) {
+            margin-left: 31px;
+        }
     }
 
     &__about-us {
@@ -116,6 +133,7 @@
 
     &__user-menu {
         display: none;
+        margin: 0;
 
         @media screen and (min-width: 769px) {
             display: flex;
