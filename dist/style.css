@@ -34,6 +34,9 @@ body {
 img {
   max-width: 100%; }
 
+.headline-hidden {
+  font-size: 0; }
+
 .slider {
   overflow: hidden; }
   .slider__list {
