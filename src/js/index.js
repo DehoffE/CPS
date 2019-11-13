@@ -22,8 +22,10 @@ import '../scss/languages-list.scss';
 import '../scss/public-rules.scss';
 import '../scss/copyright.scss';
 import '../scss/callback-modal.scss';
+import '../scss/feedback-modal.scss';
 
 
 import '../js/dropdown.js';
 import '../js/slider.js';
 import '../js/callback.js';
+import '../js/feedback.js';
