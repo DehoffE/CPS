@@ -6,7 +6,7 @@ if (window.innerWidth < 769) {
     });
 
     if (window.innerWidth < 426) {
-        var brandsSlider = new Swiper('.tech-repair', {
+        var techSlider = new Swiper('.tech-repair', {
             slidesPerView: 'auto',
             wrapperClass: 'tech-list',
             slideClass: 'tech-list__item',
@@ -16,7 +16,7 @@ if (window.innerWidth < 769) {
             }
         });
 
-        var techSlider = new Swiper('.brands', {
+        var brandsSlider = new Swiper('.brands', {
             slidesPerView: 'auto',
             wrapperClass: 'brands__list',
             slideClass: 'brands__item',
