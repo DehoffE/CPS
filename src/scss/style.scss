@@ -199,7 +199,7 @@ img {
 }
 
 .arrows-link {
-    display: none;
+    display: inline-flex;
     align-items: center;
 
     font-weight: 700;
@@ -207,17 +207,6 @@ img {
     letter-spacing: -0.2px;
     text-decoration: none;
     color: #000;
-
-    @media screen and (min-width: 426px) {
-        display: inline-flex;
-    }
-
-    &:hover {
-        &::before {
-            animation-name: arrows-animate;
-            animation-duration: 1s;
-        }
-    }
 
     &::before {
         content: '';
@@ -228,5 +217,11 @@ img {
         margin-right: 8px;
 
         background-image: url("../img/arrow.png");
+    }
+
+    &--reverse {
+        &::before {
+            transform: rotate(180deg);
+        }
     }
 }

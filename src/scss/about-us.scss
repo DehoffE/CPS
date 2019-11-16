@@ -1,25 +1,3 @@
-@keyframes arrows-animate {
-    0% {
-        transform: translateY(0);
-    }
-
-    25% {
-        transform: translateY(6px);
-    }
-
-    50% {
-        transform: translateY(0);
-    }
-
-    75% {
-        transform: translateY(6px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
 .about-us {
     @media screen and (min-width: 620px) {
         display: flex;
@@ -62,6 +40,10 @@
 
         &:last-child {
             margin-bottom: 10px;
+        }
+
+        &--expand {
+            height: unset;
         }
     }
 

@@ -54,4 +54,29 @@ feedbackModalWrap.addEventListener('click', function(e) {
             document.body.classList.remove('fixed');
         }
     }
-})
+});
+
+function checkForm(formName, requiredFieldsName) {
+    let form = document.querySelector('.' + formName);
+    let requiredFields = [];
+
+    for (let i = 0; i < requiredFieldsName.length; i++) {
+        requiredFields[i] = form.querySelector(requiredFieldsName[i]);
+    }
+
+    form.onsubmit = function(e) {
+        let canSubmit = true;
+        for (let i = 0; i < requiredFields.length; i++) {
+            if (requiredFields[i].value === '') {
+                canSubmit = false;
+                requiredFields[i].style.backgroundColor = 'rgba(255, 0, 0, 0.2)';
+            }
+        }
+
+        if (!canSubmit) {
+            e.preventDefault();
+        }
+    }
+}
+
+checkForm('feedback-form', ['.feedback-form__name', '.feedback-form__email']);

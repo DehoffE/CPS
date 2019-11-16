@@ -27,4 +27,5 @@ import '../scss/feedback-modal.scss';
 import '../js/dropdown.js';
 import '../js/callback.js';
 import '../js/feedback.js';
+import '../js/expand.js';
 import '../js/swiper-init.js';
