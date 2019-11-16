@@ -212,13 +212,6 @@ img {
         display: inline-flex;
     }
 
-    &:hover {
-        &::before {
-            animation-name: arrows-animate;
-            animation-duration: 1s;
-        }
-    }
-
     &::before {
         content: '';
 
@@ -228,5 +221,11 @@ img {
         margin-right: 8px;
 
         background-image: url("../img/arrow.png");
+    }
+
+    &--reverse {
+        &::before {
+            transform: rotate(180deg);
+        }
     }
 }

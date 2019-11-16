@@ -45,7 +45,14 @@
         @media screen and (min-width: 426px) {
             flex-wrap: wrap;
             justify-content: center;
+            height: 176px;
             margin-bottom: 8px;
+
+            overflow: hidden;
+        }
+
+        &--expand {
+            height: unset;
         }
     }
 
@@ -69,18 +76,10 @@
 
             margin-bottom: 16px;
             margin-right: 24px;
-
-            &:not(:nth-child(-n + 6)) {
-                display: none;
-            }
         }
 
         @media screen and (min-width: 769px) {
             margin-right: 32px;
-
-            &:nth-child(n + 6) {
-                display: flex;
-            }
         }
     }
 
