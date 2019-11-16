@@ -924,7 +924,6 @@ img {
 
 .dropdown-menu {
   position: fixed;
-  top: 0;
   left: -500px;
   z-index: 100;
   display: -webkit-box;
