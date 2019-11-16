@@ -120,3 +120,113 @@ img {
         background-image: url("../img/close.svg");
     }
 }
+
+.order-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 150px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 24px;
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+
+    background-color: $btnColor;
+    border: none;
+    border-radius: 16px;
+
+    &:hover {
+        box-shadow: inset 3px 3px 0 0 rgba(0, 0, 0, 0.5);
+    }
+
+    &::after {
+        content: '';
+
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        margin-left: 10px;
+
+        border: 2px solid #fff;
+        border-left: transparent;
+        border-bottom: transparent;
+        transform: rotate(45deg);
+    }
+}
+
+.arrow-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+
+    font-size: 0;
+
+    border: 2px solid $btnColor;
+    border-radius: 50%;
+
+    &:hover {
+        background-color: $btnColor;
+
+        &::before {
+            border-right-color: #fff;
+            border-top-color: #fff;
+        }
+    }
+
+    &::before {
+        content: '';
+
+        display: block;
+        margin-left: -4px;
+        width: 8px;
+        height: 8px;
+
+        border: 2px solid $btnColor;
+        border-left: transparent;
+        border-bottom: transparent;
+        transform: rotate(45deg);
+    }
+}
+
+.arrows-link {
+    display: none;
+    align-items: center;
+
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    text-decoration: none;
+    color: #000;
+
+    @media screen and (min-width: 426px) {
+        display: inline-flex;
+    }
+
+    &:hover {
+        &::before {
+            animation-name: arrows-animate;
+            animation-duration: 1s;
+        }
+    }
+
+    &::before {
+        content: '';
+
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+
+        background-image: url("../img/arrow.png");
+    }
+}
