@@ -1,3 +1,25 @@
+@keyframes arrows-animate {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(6px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    75% {
+        transform: translateY(6px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .about-us {
     @media screen and (min-width: 620px) {
         display: flex;
@@ -21,38 +43,25 @@
     }
 
     &__text {
+        height: 90px;
         margin-top: 0;
         margin-bottom: 16px;
 
         font-weight: 500;
         font-size: 14px;
-        line-height: 20px;
+        line-height: 18px;
         letter-spacing: 0.2px;
+
+        overflow: hidden;
+
+        @media screen and (min-width: 620px) {
+            height: 160px;
+
+            line-height: 20px;
+        }
 
         &:last-child {
             margin-bottom: 10px;
-        }
-    }
-
-    &__link {
-        display: inline-flex;
-        align-items: center;
-
-        font-weight: 700;
-        font-size: 16px;
-        letter-spacing: -0.2px;
-        text-decoration: none;
-        color: #000;
-
-        &::before {
-            content: '';
-
-            display: inline-block;
-            width: 24px;
-            height: 24px;
-            margin-right: 8px;
-
-            background-image: url("../img/arrow.png");
         }
     }
 
@@ -65,10 +74,11 @@
         @media screen and (min-width: 620px) {
             align-self: flex-start;
             width: 50%;
+            margin-left: 48px;
         }
 
         @media screen and (min-width: 769px) {
-            margin-left: 36px;
+            margin-left: 30px;
         }
     }
 }

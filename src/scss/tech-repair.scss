@@ -102,30 +102,12 @@
     &__link {
         align-self: flex-end;
     }
-    
-    &__button {
-        display: none;
-        align-items: center;
-        margin-bottom: 16px;
+
+    &__arrows-link {
         margin-left: 24px;
 
-        font-weight: 700;
-        font-size: 16px;
-        letter-spacing: -0.2px;
-        text-decoration: none;
-        color: #000;
-
-        @media screen and (min-width: 426px) {
-            display: inline-flex;
-        }
-
-        &::before {
-            content: '';
-
-            display: inline-block;
-            width: 24px;
-            height: 24px;
-            background-image: url("../img/arrow.png");
+        @media screen and (min-width: 769px) {
+            margin-left: 32px;
         }
     }
 }
