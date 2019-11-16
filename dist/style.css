@@ -177,7 +177,9 @@ img {
     transform: rotate(45deg); }
 
 .arrows-link {
-  display: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -186,11 +188,6 @@ img {
   letter-spacing: -0.2px;
   text-decoration: none;
   color: #000; }
-  @media screen and (min-width: 426px) {
-    .arrows-link {
-      display: -webkit-inline-box;
-      display: -ms-inline-flexbox;
-      display: inline-flex; } }
   .arrows-link::before {
     content: '';
     display: inline-block;
@@ -602,7 +599,13 @@ img {
       .brands__item {
         margin-right: 32px; } }
   .brands__arrows-link {
-    margin-left: 24px; }
+    display: none; }
+    @media screen and (min-width: 426px) {
+      .brands__arrows-link {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        margin-left: 24px; } }
     @media screen and (min-width: 769px) {
       .brands__arrows-link {
         margin-left: 32px; } }
@@ -703,7 +706,13 @@ img {
     -ms-flex-item-align: end;
     align-self: flex-end; }
   .tech-repair__arrows-link {
-    margin-left: 24px; }
+    display: none; }
+    @media screen and (min-width: 426px) {
+      .tech-repair__arrows-link {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        margin-left: 24px; } }
     @media screen and (min-width: 769px) {
       .tech-repair__arrows-link {
         margin-left: 32px; } }
@@ -1128,6 +1137,23 @@ img {
     .callback-form {
       margin-left: 32px;
       margin-right: 32px; } }
+  .callback-form textarea,
+  .callback-form input {
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    font-family: "TT Lakes", "Verdana", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #B5B6BC;
+    border: 2px solid #EAEAEA;
+    border-radius: 8px; }
+    .callback-form textarea:focus,
+    .callback-form input:focus {
+      outline: none;
+      border-color: #41F6D7; }
   .callback-form textarea::-webkit-input-placeholder,
   .callback-form input::-webkit-input-placeholder {
     font-family: "TT Lakes", "Verdana", sans-serif;
@@ -1170,17 +1196,6 @@ img {
     color: #B5B6BC; }
   .callback-form__button {
     margin-left: auto; }
-  .callback-form__phone-number {
-    width: 100%;
-    padding: 12px 16px;
-    font-family: "TT Lakes", "Verdana", sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    color: #B5B6BC;
-    border: 2px solid #EAEAEA;
-    border-radius: 8px; }
   .callback-form__text {
     margin-bottom: 16px;
     font-weight: 700;
@@ -1253,6 +1268,23 @@ img {
     .feedback-form {
       margin-left: 32px;
       margin-right: 32px; } }
+  .feedback-form textarea,
+  .feedback-form input {
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    font-family: "TT Lakes", "Verdana", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #B5B6BC;
+    border: 2px solid #EAEAEA;
+    border-radius: 8px; }
+    .feedback-form textarea:focus,
+    .feedback-form input:focus {
+      outline: none;
+      border-color: #41F6D7; }
   .feedback-form textarea::-webkit-input-placeholder,
   .feedback-form input::-webkit-input-placeholder {
     font-family: "TT Lakes", "Verdana", sans-serif;
@@ -1295,54 +1327,7 @@ img {
     color: #B5B6BC; }
   .feedback-form__button {
     margin-left: auto; }
-  .feedback-form__name {
-    width: 100%;
-    padding: 12px 16px;
-    margin-bottom: 16px;
-    font-family: "TT Lakes", "Verdana", sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    color: #B5B6BC;
-    border: 2px solid #EAEAEA;
-    border-radius: 8px; }
-  .feedback-form__phone-number {
-    width: 100%;
-    padding: 12px 16px;
-    margin-bottom: 16px;
-    font-family: "TT Lakes", "Verdana", sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    color: #B5B6BC;
-    border: 2px solid #EAEAEA;
-    border-radius: 8px; }
-  .feedback-form__email {
-    width: 100%;
-    padding: 12px 16px;
-    margin-bottom: 16px;
-    font-family: "TT Lakes", "Verdana", sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    color: #B5B6BC;
-    border: 2px solid #EAEAEA;
-    border-radius: 8px; }
   .feedback-form__message {
-    width: 100%;
-    padding: 12px 16px;
-    margin-bottom: 16px;
-    font-family: "TT Lakes", "Verdana", sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    color: #B5B6BC;
-    border: 2px solid #EAEAEA;
-    border-radius: 8px;
     resize: unset; }
   .feedback-form__text {
     margin-bottom: 16px;

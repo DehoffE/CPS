@@ -199,7 +199,7 @@ img {
 }
 
 .arrows-link {
-    display: none;
+    display: inline-flex;
     align-items: center;
 
     font-weight: 700;
@@ -207,10 +207,6 @@ img {
     letter-spacing: -0.2px;
     text-decoration: none;
     color: #000;
-
-    @media screen and (min-width: 426px) {
-        display: inline-flex;
-    }
 
     &::before {
         content: '';

@@ -84,7 +84,12 @@
     }
 
     &__arrows-link {
-        margin-left: 24px;
+        display: none;
+
+        @media screen and (min-width: 426px) {
+            display: inline-flex;
+            margin-left: 24px;
+        }
 
         @media screen and (min-width: 769px) {
             margin-left: 32px;
