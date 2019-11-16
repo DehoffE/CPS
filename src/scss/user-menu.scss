@@ -16,36 +16,12 @@
         display: flex;
         align-items: center;
 
+        font-family: "TT Lakes", "Verdana", sans-serif;
         font-size: 0;
         font-weight: 700;
         line-height: 24px;
         letter-spacing: -0.2px;
         text-decoration: none;
-
-        &::after {
-            content: "";
-
-            display: block;
-            width: 40px;
-            height: 40px;
-            flex-shrink: 0;
-
-            background-color: $btnColor;
-            background-repeat: no-repeat;
-            background-position: 50% 50%;
-            border-radius: 50%;
-        }
-
-        &--order {
-            &::after {
-                background-image: url(../img/order.svg);
-            }
-        }
-
-        &--status {
-            &::after {
-                background-image: url(../img/status.svg);
-            }
-        }
+        color: #000;
     }
 }

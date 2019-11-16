@@ -11,6 +11,8 @@
     background-color: rgba(255, 255, 255, 0.96);
 
     @media screen and (min-width: 769px) {
+        left: unset;
+
         display: block;
         width: 306px;
     }    

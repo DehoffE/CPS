@@ -1,6 +1,5 @@
 import '../scss/fonts.scss';
 import '../scss/style.scss';
-import '../scss/slider.scss';
 import '../scss/social-btns.scss';
 import '../scss/page-header.scss';
 import '../scss/dropdown-menu-wrap.scss';
@@ -26,6 +25,6 @@ import '../scss/feedback-modal.scss';
 
 
 import '../js/dropdown.js';
-import '../js/slider.js';
 import '../js/callback.js';
 import '../js/feedback.js';
+import '../js/swiper-init.js';

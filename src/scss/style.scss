@@ -4,11 +4,6 @@
     box-sizing: inherit;
 }
 
-*:focus {
-    outline: none;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-}
-
 html {
     box-sizing: border-box;
 }
@@ -28,4 +23,100 @@ img {
 
 .headline-hidden {
     font-size: 0;
+}
+
+.fixed {
+    overflow: hidden;
+}
+
+.logo {
+    min-width: 70px;
+}
+
+.page {
+    position: relative;
+
+    max-width: 1440px;
+    margin: auto;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-pagination-bullet {
+    display: block;
+
+    width: 12px;
+    height: 12px;
+    margin-right: 12px;
+
+    background-color: #ddd;
+    border-radius: 50%;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &-active {
+        background-color: #B5B6BC;
+    }
+}
+
+.primary-btn {
+    display: block;
+
+    font-size: 0;
+
+    background: none;
+    border: none;
+
+    cursor: pointer;
+
+    &:hover::after {
+        background-color: lighten($btnColor, 15%);
+    }
+
+    &::after {
+        content: '';
+
+        display: block;
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+
+        background-color: $btnColor;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border-radius: 50%; 
+    }
+    
+    &--type_call::after {
+        background-image: url("../img/call.svg");
+    }
+
+    &--type_mail::after {
+        background-image: url("../img/mail.svg");
+    }
+
+    &--type_profile::after {
+        background-image: url("../img/profile.svg");
+    }
+
+    &--type_order::after {
+        background-image: url("../img/order.svg");
+    }
+
+    &--type_status::after {
+        background-image: url("../img/status.svg");
+    }
+
+    &--type_search::after {
+        background-image: url("../img/search.svg");
+    }
+
+    &--type_close::after {
+        background-image: url("../img/close.svg");
+    }
 }

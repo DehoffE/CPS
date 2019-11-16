@@ -1,6 +1,6 @@
 let callbackModalWrap = document.querySelector('.callback-modal-wrap');
 let callbackModal = callbackModalWrap.querySelector('.callback-modal');
-let buttonShowCallbackModal = document.querySelectorAll('.social-btns__button--type_call');
+let buttonShowCallbackModal = document.querySelectorAll('.primary-btn--type_call');
 let buttonCloseCallbackModal = callbackModal.querySelector('.callback-modal__close');
 
 for (let i = 0; i < buttonShowCallbackModal.length; i++) {
@@ -11,6 +11,8 @@ for (let i = 0; i < buttonShowCallbackModal.length; i++) {
             callbackModal.classList.add('callback-modal--open');
         }, 10);
         callbackModal.querySelector('.callback-form__phone-number').focus();
+
+        document.body.classList.add('fixed');
     })
 }
 
@@ -20,6 +22,10 @@ buttonCloseCallbackModal.addEventListener('click', function(e) {
     setTimeout(function() {
         callbackModalWrap.classList.remove('callback-modal-wrap--open');
     }, 250);
+
+    if (document.querySelector('.dropdown-menu-wrap--open') === null) {
+        document.body.classList.remove('fixed');
+    }
 });
 
 document.addEventListener('keydown', function(e) {
@@ -29,6 +35,10 @@ document.addEventListener('keydown', function(e) {
         setTimeout(function(){
             callbackModalWrap.classList.remove('callback-modal-wrap--open');
         }, 250);
+
+        if (document.querySelector('.dropdown-menu-wrap--open') === null) {
+            document.body.classList.remove('fixed');
+        }
     }
 });
 
@@ -39,5 +49,9 @@ callbackModalWrap.addEventListener('click', function(e) {
         setTimeout(function(){
             callbackModalWrap.classList.remove('callback-modal-wrap--open');
         }, 50);
+
+        if (document.querySelector('.dropdown-menu-wrap--open') === null) {
+            document.body.classList.remove('fixed');
+        }
     }
 })
