@@ -42,7 +42,9 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "dependencies": {},
+  "dependencies": {
+    "swiper": "^5.2.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DehoffE/webpack-static-template.git"

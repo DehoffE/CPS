@@ -9,6 +9,8 @@ burger.addEventListener('click', function() {
     setTimeout(function(){
         dropdown.classList.add('dropdown-menu--open');
     }, 10);
+
+    document.body.classList.add('fixed');
 });
 
 close.addEventListener('click', function() {
@@ -17,6 +19,8 @@ close.addEventListener('click', function() {
     setTimeout(function(){
         dropdownWrap.classList.remove('dropdown-menu-wrap--open');
     }, 50);
+
+    document.body.classList.remove('fixed');
 });
 
 document.addEventListener('keydown', function(e) {
@@ -26,6 +30,8 @@ document.addEventListener('keydown', function(e) {
         setTimeout(function(){
             dropdownWrap.classList.remove('dropdown-menu-wrap--open');
         }, 50);
+
+        document.body.classList.remove('fixed');
     }
 });
 
@@ -36,6 +42,8 @@ dropdownWrap.addEventListener('click', function(e) {
         setTimeout(function(){
             dropdownWrap.classList.remove('dropdown-menu-wrap--open');
         }, 50);
+
+        document.body.classList.remove('fixed');
     }
 })
 

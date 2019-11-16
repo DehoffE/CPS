@@ -4,7 +4,9 @@
     border-top: 1px solid $shadowColor;
     margin-bottom: 24px;
 
-    @media screen and (min-width: 321px) {
+    overflow: hidden;
+
+    @media screen and (min-width: 426px) {
         margin-bottom: 32px;
     }
 
@@ -22,7 +24,7 @@
 
         background-image: linear-gradient(to right, #f8f8f8, #ffffff);
 
-        @media screen and (min-width: 321px) {
+        @media screen and (min-width: 426px) {
             padding-left: 24px;
             padding-right: 24px;
             margin-bottom: 24px;
@@ -40,7 +42,7 @@
 
         list-style: none;
 
-        @media screen and (min-width: 321px) {
+        @media screen and (min-width: 426px) {
             flex-wrap: wrap;
             justify-content: center;
             margin-bottom: 8px;
@@ -51,7 +53,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 224px;
+        width: 240px;
         height: 72px;
         padding-left: 16px;
         padding-right: 16px;
@@ -62,7 +64,9 @@
         border: 1px solid #EAEAEA;
         border-radius: 6px;
 
-        @media screen and (min-width: 321px) {
+        @media screen and (min-width: 426px) {
+            width: 224px;
+
             margin-bottom: 16px;
             margin-right: 24px;
 
@@ -72,7 +76,6 @@
         }
 
         @media screen and (min-width: 769px) {
-            width: 240px;
             margin-right: 32px;
 
             &:nth-child(n + 6) {
@@ -93,7 +96,7 @@
         text-decoration: none;
         color: #000;
 
-        @media screen and (min-width: 321px) {
+        @media screen and (min-width: 426px) {
             display: inline-flex;
         }
 

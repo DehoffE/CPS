@@ -18,6 +18,10 @@
         text-decoration: none;
         color: #000;
 
+        &:hover {
+            color: #7E7E82;
+        }
+
         &--current {
             color: #7E7E82;
         }

@@ -1,9 +1,13 @@
 @import 'variables';
 
 .prices {
+    margin-bottom: 16px;
+
     border-top: 1px solid $shadowColor;
 
-    @media screen and (min-width: 321px) {
+    @media screen and (min-width: 426px) {
+        margin-bottom: 24px;
+
         &__table {
             display: table;
             width: calc(100% - 60px);
@@ -34,7 +38,7 @@
                     }
                 }
 
-                @media screen and (min-width: 321px) {
+                @media screen and (min-width: 426px) {
                     display: table-row-group;
                 }
             }
@@ -55,11 +59,12 @@
         }
     }
 
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 425px) {
         &__table {
             display: block;
             padding-left: 8px;
             padding-right: 8px;
+            margin-bottom: 16px;
 
             background-color: transparent;
 
