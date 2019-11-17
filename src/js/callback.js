@@ -10,7 +10,10 @@ for (let i = 0; i < buttonShowCallbackModal.length; i++) {
         setTimeout(function() {
             callbackModal.classList.add('callback-modal--open');
         }, 10);
-        callbackModal.querySelector('.callback-form__phone-number').focus();
+
+        if (detect.parse(navigator.userAgent).browser.family !== 'IE') {
+            callbackModal.querySelector('.callback-form__phone-number').focus();
+        }
 
         document.body.classList.add('fixed');
     })
@@ -43,7 +46,7 @@ document.addEventListener('keydown', function(e) {
 });
 
 callbackModalWrap.addEventListener('click', function(e) {
-    if (e.path[0] === callbackModalWrap) {
+    if (e.target === callbackModalWrap) {
         callbackModal.classList.remove('callback-modal--open');
 
         setTimeout(function(){
@@ -54,4 +57,4 @@ callbackModalWrap.addEventListener('click', function(e) {
             document.body.classList.remove('fixed');
         }
     }
-})
+});
