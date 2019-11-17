@@ -10,7 +10,10 @@ for (let i = 0; i < buttonShowfeedbackModal.length; i++) {
         setTimeout(function() {
             feedbackModal.classList.add('feedback-modal--open');
         }, 10);
-        feedbackModal.querySelector('.feedback-form__name').focus();
+
+        if (detect.parse(navigator.userAgent).browser.family !== 'IE') {
+            feedbackModal.querySelector('.feedback-form__name').focus();
+        }
 
         document.body.classList.add('fixed');
     });
@@ -43,7 +46,7 @@ document.addEventListener('keydown', function(e) {
 });
 
 feedbackModalWrap.addEventListener('click', function(e) {
-    if (e.path[0] === feedbackModalWrap) {
+    if (e.target === feedbackModalWrap) {
         feedbackModal.classList.remove('feedback-modal--open');
 
         setTimeout(function(){

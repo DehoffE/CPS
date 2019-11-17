@@ -3,7 +3,7 @@ function clickToExpand(block, btn, indexBtn) {
     let btnElem = document.querySelectorAll('.' + btn)[indexBtn];
     let blockElem = document.querySelector('.' + block);
 
-    btnElem.addEventListener('click', function() {
+    btnElem.onclick = function() {
         let expand = false;
         let startValueBtn = btnElem.textContent;
 
@@ -19,7 +19,7 @@ function clickToExpand(block, btn, indexBtn) {
                 btnElem.textContent = startValueBtn;
             }
         }
-    }());
+    }();
 }
 
 clickToExpand('about-us__text', 'arrows-link', 0);

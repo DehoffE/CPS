@@ -24,6 +24,7 @@ import '../scss/callback-modal.scss';
 import '../scss/feedback-modal.scss';
 
 
+import '../js/detect.js';
 import '../js/dropdown.js';
 import '../js/callback.js';
 import '../js/feedback.js';

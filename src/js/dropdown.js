@@ -36,14 +36,14 @@ document.addEventListener('keydown', function(e) {
 });
 
 dropdownWrap.addEventListener('click', function(e) {
-    if (e.path[0] === dropdownWrap) {
+    if (e.target === dropdownWrap) {
         dropdown.classList.remove('dropdown-menu--open');
 
         setTimeout(function(){
             dropdownWrap.classList.remove('dropdown-menu-wrap--open');
         }, 50);
-
+    
         document.body.classList.remove('fixed');
     }
-})
+});
 
