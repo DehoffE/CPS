@@ -3,8 +3,8 @@ let dropdownWrap = document.querySelector('.dropdown-menu-wrap');
 let dropdown = dropdownWrap.querySelector('.dropdown-menu');
 let close = dropdown.querySelector('.dropdown-menu__close');
 
-if (detect.parse(navigator.userAgent) === 'Mobile Safari') {
-    dropdown.style.display = 'block';
+if (detect.parse(navigator.userAgent).browser.family === 'Mobile Safari') {
+    dropdown.classList.add('dropdown-menu--safari_bug-fix');
 }
 
 burger.addEventListener('click', function() {

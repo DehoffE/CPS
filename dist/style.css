@@ -970,6 +970,8 @@ img {
     @media screen and (min-width: 769px) {
       .dropdown-menu--open {
         left: unset; } }
+  .dropdown-menu--safari_bug-fix {
+    display: block; }
   .dropdown-menu__header {
     display: -webkit-box;
     display: -ms-flexbox;
