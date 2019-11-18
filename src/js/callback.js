@@ -1,60 +1,47 @@
-let callbackModalWrap = document.querySelector('.callback-modal-wrap');
-let callbackModal = callbackModalWrap.querySelector('.callback-modal');
+let callbackModal = document.querySelector('.callback-modal');
 let buttonShowCallbackModal = document.querySelectorAll('.primary-btn--type_call');
 let buttonCloseCallbackModal = callbackModal.querySelector('.callback-modal__close');
+let callbackOverlay = document.createElement('div');
+callbackOverlay.classList.add('overlay');
+callbackOverlay.style.zIndex = '199';
 
 for (let i = 0; i < buttonShowCallbackModal.length; i++) {
     buttonShowCallbackModal[i].addEventListener('click', function(e) {
         e.preventDefault();
-        callbackModalWrap.classList.add('callback-modal-wrap--open');
-        setTimeout(function() {
-            callbackModal.classList.add('callback-modal--open');
-        }, 10);
+
+        document.body.appendChild(callbackOverlay);
+        
+        callbackModal.classList.add('callback-modal--open');
 
         if (detect.parse(navigator.userAgent).browser.family !== 'IE') {
             callbackModal.querySelector('.callback-form__phone-number').focus();
         }
 
-        document.body.classList.add('fixed');
+        document.body.style = 'overflow: hidden';
     })
 }
 
 buttonCloseCallbackModal.addEventListener('click', function(e) {
     callbackModal.classList.remove('callback-modal--open');
 
-    setTimeout(function() {
-        callbackModalWrap.classList.remove('callback-modal-wrap--open');
-    }, 250);
+    document.body.removeChild(callbackOverlay);
 
-    if (document.querySelector('.dropdown-menu-wrap--open') === null) {
-        document.body.classList.remove('fixed');
-    }
+    document.body.removeAttribute('style');
 });
 
 document.addEventListener('keydown', function(e) {
     if (e.keyCode === 27) {
         callbackModal.classList.remove('callback-modal--open');
 
-        setTimeout(function(){
-            callbackModalWrap.classList.remove('callback-modal-wrap--open');
-        }, 250);
+        document.body.removeChild(callbackOverlay);
 
-        if (document.querySelector('.dropdown-menu-wrap--open') === null) {
-            document.body.classList.remove('fixed');
-        }
+        document.body.removeAttribute('style');
     }
 });
 
-callbackModalWrap.addEventListener('click', function(e) {
-    if (e.target === callbackModalWrap) {
-        callbackModal.classList.remove('callback-modal--open');
-
-        setTimeout(function(){
-            callbackModalWrap.classList.remove('callback-modal-wrap--open');
-        }, 50);
-
-        if (document.querySelector('.dropdown-menu-wrap--open') === null) {
-            document.body.classList.remove('fixed');
-        }
-    }
+callbackOverlay.addEventListener('click', function(){
+    callbackModal.classList.remove('callback-modal--open');
+    document.body.removeAttribute('style');
+    document.body.removeChild(this);
 });
+

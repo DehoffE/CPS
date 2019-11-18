@@ -1,18 +1,18 @@
 let burger = document.querySelector('.burger');
-let dropdownWrap = document.querySelector('.dropdown-menu-wrap');
-let dropdown = dropdownWrap.querySelector('.dropdown-menu');
+let dropdown = document.querySelector('.dropdown-menu');
 let close = dropdown.querySelector('.dropdown-menu__close');
+let dropdownOverlay = document.createElement('div');
 
 if (detect.parse(navigator.userAgent).browser.family === 'Mobile Safari') {
     dropdown.classList.add('dropdown-menu--safari_bug-fix');
 }
 
-burger.addEventListener('click', function() {
-    dropdownWrap.classList.add('dropdown-menu-wrap--open');
+burger.addEventListener('click', function() { 
+    dropdownOverlay.classList.add('overlay');
 
-    setTimeout(function(){
-        dropdown.classList.add('dropdown-menu--open');
-    }, 10);
+    document.body.appendChild(dropdownOverlay);
+
+    dropdown.classList.add('dropdown-menu--open');
 
     document.body.classList.add('fixed');
 });
@@ -20,34 +20,21 @@ burger.addEventListener('click', function() {
 close.addEventListener('click', function() {
     dropdown.classList.remove('dropdown-menu--open');
 
-    setTimeout(function(){
-        dropdownWrap.classList.remove('dropdown-menu-wrap--open');
-    }, 50);
+    document.body.removeChild(dropdownOverlay);
 
-    document.body.classList.remove('fixed');
+    document.body.removeAttribute('class');
 });
 
 document.addEventListener('keydown', function(e) {
     if (e.keyCode === 27) {
         dropdown.classList.remove('dropdown-menu--open');
 
-        setTimeout(function(){
-            dropdownWrap.classList.remove('dropdown-menu-wrap--open');
-        }, 50);
-
-        document.body.classList.remove('fixed');
+        document.body.removeAttribute('class');
     }
 });
 
-dropdownWrap.addEventListener('click', function(e) {
-    if (e.target === dropdownWrap) {
-        dropdown.classList.remove('dropdown-menu--open');
-
-        setTimeout(function(){
-            dropdownWrap.classList.remove('dropdown-menu-wrap--open');
-        }, 50);
-    
-        document.body.classList.remove('fixed');
-    }
+dropdownOverlay.addEventListener('click', function(){
+    dropdown.classList.remove('dropdown-menu--open');
+    document.body.removeChild(this);
+    document.body.removeAttribute('class');
 });
-

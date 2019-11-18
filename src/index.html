@@ -52,9 +52,9 @@
             </header>
             <nav class="nav-slider">
                 <ul class="navigation page-main__navigation">
-                    <li class="navigation__item"><a class="navigation__link navigation__link--active" href="#">Ремонтируемые бренды</a></li>
-                    <li class="navigation__item"><a class="navigation__link" href="#">Ремонтируемые устройства</a></li>
-                    <li class="navigation__item"><a class="navigation__link" href="#">Цены на услуги</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#repair-brands">Ремонтируемые бренды</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#repair-devices">Ремонтируемые устройства</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#prices">Цены на услуги</a></li>
                     <li class="navigation__item"><a class="navigation__link" href="#">Адреса сервисных центров</a></li>
                     <li class="navigation__item"><a class="navigation__link" href="#">Специальные цены</a></li>
                     <li class="navigation__item"><a class="navigation__link" href="#">Отзывы</a></li>
@@ -82,7 +82,7 @@
                 </div>
                 <img src="img/about-us.jpg" alt="фото нашей вывески" width="531">
             </section>
-            <section class="brands">
+            <section class="brands" id="repair-brands">
                 <h2 class="brands__title">Ремонт техники различных брендов</h2>
                 <ul class="brands__list">
                     <li class="brands__item">
@@ -125,7 +125,8 @@
                 <div class="pagination brands-pagination"></div>
                 <a class="arrows-link brands__arrows-link" href="#">Показать все (9)</a>
             </section>
-            <section class="tech-repair">
+
+            <section class="tech-repair" id="repair-devices">
                 <h2 class="tech-repair__title">Ремонт различных видов техники</h2>
                 <ul class="tech-list tech-repair__list">
                     <li class="tech-list__item">
@@ -168,7 +169,7 @@
                 <div class="pagination tech-repair-pagination"></div>
                 <a class="arrows-link tech-repair__arrows-link" href="#">Показать все (9)</a>
             </section>
-            <section class="prices">
+            <section class="prices" id="prices">
                 <h2 class="prices__title">Цены на услуги</h2>
                 <table class="prices__table">
                     <thead>
@@ -237,7 +238,7 @@
             </p>
         </footer>
 
-        <div class="dropdown-menu-wrap">
+
             <section class="dropdown-menu">
                 <h2 class="headline-hidden">Выпадающее меню</h2>
                 <header class="dropdown-menu__header">
@@ -301,8 +302,7 @@
                     </li>
                 </ul>
             </section>
-        </div>
-        <div class="callback-modal-wrap">
+
             <section class="callback-modal">
                 <h2 class="callback-modal__title">Заказать звонок</h2>
                 <form class="callback-form callback-modal__form" action="http://echo.htmlacademy.ru">
@@ -314,8 +314,7 @@
                 </form>
                 <button class="primary-btn primary-btn--type_close callback-modal__close" type="button">Закрыть</button>
             </section>
-        </div>
-        <div class="feedback-modal-wrap">
+
             <section class="feedback-modal">
                 <h2 class="feedback-modal__title">Обратная связь</h2>
                 <form class="feedback-form feedback-modal__form" action="http://echo.htmlacademy.ru">
@@ -333,7 +332,6 @@
                 </form>
                 <button class="primary-btn primary-btn--type_close feedback-modal__close" type="button">Закрыть</button>
             </section>
-        </div>
     </div>
     <script src="js/swiper.min.js"></script>
 </body>

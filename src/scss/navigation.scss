@@ -31,10 +31,6 @@
         border: 2px solid transparent;
 
         &:hover {
-            color: darken($color: #7e7e82, $amount: 30%)
-        }
-
-        &--active {
             background-color: #fff;
             border: 2px solid #B8FFEC;
             border-radius: 6px;

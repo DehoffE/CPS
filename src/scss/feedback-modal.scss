@@ -21,6 +21,7 @@
     position: fixed;
     top: 0;
     right: -600px;
+    z-index: 200;
 
     width: 100vw;
     height: 100vh;
@@ -36,7 +37,7 @@
         box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
     }
 
-    @media screen and (min-width: 769px) {
+    @media screen and (min-width: 1120px) {
         width: 440px;
         padding-top: 32px;
     }
@@ -50,7 +51,7 @@
         top: 24px;
         left: 16px;
 
-        @media screen and (min-width: 769px) {
+        @media screen and (min-width: 1120px) {
             top: 32px;
             left: -72px;
         }
@@ -68,7 +69,7 @@
 
         border-left: 4px solid $highlightColor;
 
-        @media screen and (min-width: 769px) {
+        @media screen and (min-width: 1120px) {
             padding-left: 30px;
         }
     }
@@ -78,7 +79,7 @@
     margin-left: 16px;
     margin-right: 16px;
 
-    @media screen and (min-width: 769px) {
+    @media screen and (min-width: 1120px) {
         margin-left: 32px;
         margin-right: 32px;
     }

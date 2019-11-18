@@ -22,7 +22,7 @@
     "sass-loader": "7.2.0",
     "webpack": "4.39.2",
     "webpack-cli": "3.3.7",
-    "webpack-dev-server": "3.8.0"
+    "webpack-dev-server": "^3.8.0"
   },
   "postcss": {
     "plugins": {
@@ -38,7 +38,7 @@
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
     "watch": "webpack --mode development --watch",
-    "start": "webpack-dev-server --mode development --open",
+    "start": "webpack-dev-server",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
