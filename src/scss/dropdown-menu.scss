@@ -2,6 +2,7 @@
 
 .dropdown-menu {
     position: fixed;
+    top: 0;
     left: -500px;
     z-index: 100;
 
@@ -14,13 +15,13 @@
     background-color: #fff;
     box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
 
-    transition: left 300ms;
+    transition: left 500ms;
 
     @media screen and (min-width: 426px) {
         width: 320px;
     }
 
-    @media screen and (min-width: 769px) {
+    @media screen and (min-width: 1120px) {
         left: auto;
 
         width: 306px;
@@ -39,7 +40,7 @@
     &--open {
         left: 0;
 
-        @media screen and (min-width: 769px) {
+        @media screen and (min-width: 1120px) {
             left: unset;
         }
     }
@@ -57,7 +58,7 @@
     &__close {
         margin-right: 16px;
 
-        @media screen and (min-width: 769px) {
+        @media screen and (min-width: 1120px) {
             display: none;
         }
     }

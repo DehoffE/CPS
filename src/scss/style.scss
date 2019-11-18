@@ -6,6 +6,8 @@
 
 html {
     box-sizing: border-box;
+
+    scroll-behavior: smooth;
 }
 
 html,
@@ -232,4 +234,15 @@ img {
             transform: rotate(180deg);
         }
     }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(255, 255, 255, 0.95);
 }
